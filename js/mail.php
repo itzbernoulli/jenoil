@@ -17,8 +17,8 @@ else if ($captcha_success->success==true) {
 }
 
 
-$to = 'onurolker@gmail.com';   
-$subject = 'Stephans Form';
+$to = 'oyinloyeayodeji@gmail.com';   
+$subject = 'Jenoil Form';
 
 $message = '<strong>Name : </strong>'.$con_name.'<br/><br/>';
 
