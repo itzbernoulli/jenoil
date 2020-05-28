@@ -617,6 +617,13 @@ input:-webkit-autofill {
     width: 100%;
  }   
 
+.about a {
+    color:#ffffff;
+}
+
+.about a:hover {
+    color:#b3b3b3;
+}
 
 .work-areas{
     width: 100%;
@@ -832,7 +839,7 @@ input:-webkit-autofill {
     letter-spacing: 0;
     line-height: 27px;
     padding: 30px 0 15px;
-    color: #ffffff;
+    color: #000;
 }
 
 .blog-info{
@@ -860,6 +867,10 @@ input:-webkit-autofill {
     color: #000;
     font-weight: 600;
     letter-spacing: -1px;
+}
+
+.blog-single p {
+    color: #748182;
 }
 
 .blog-single .blog-detail{
@@ -899,10 +910,6 @@ input:-webkit-autofill {
 .blog-single .post-lightbox{
     padding: 30px 0 0;
  }
-
- .blog{
-    color:#ffffff;
-}
 
 .subtitle {
      font-size: 22px;
@@ -973,6 +980,10 @@ ul.post-comment li p {
 }
 
 .blog .dgray-bg .sitebtn{
+    margin-right:120px;
+}
+
+.client .dgray-bg .sitebtn{
     margin-right:120px;
 }
 
@@ -1148,6 +1159,7 @@ a.site-button{
         margin-top: 30px;
     }
     
+    
     .gray-bg {
         margin-top: 30px;
     }
@@ -1177,6 +1189,10 @@ a.site-button{
     }
     
     .diag .blog{
+        padding-bottom: 60px;
+    }
+
+    .diag .client{
         padding-bottom: 60px;
     }
     
@@ -1224,6 +1240,95 @@ a.site-button{
         visibility: visible !important;
 }
 
+
+/*------------------------ 7 Client ------------------------*/
+
+
+.client-image img{
+    width: 100%;
+    min-height: 207px;
+}
+
+.client-content{
+    margin-bottom:60px;
+}
+
+.client-title{
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 27px;
+    padding: 30px 0 15px;
+    color: #ffffff;
+}
+
+.client-info{
+    font-size: 12px;
+    font-weight: 400;
+    color: #b9b9b9;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.client-info span{
+    color: #000;
+    font-weight: 600;
+}
+
+.client .site-button{
+    margin:0 auto 60px;
+    display: table;
+}
+
+.client-single h1 {
+    font-size: 30px;
+    line-height: 41px;
+    margin: 25px 0 22px 0;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.client-single .client-detail{
+    font-size: 13px;
+    color: #b9b9b9;
+    margin-bottom: 30px;
+}
+
+.client-single .client-detail span{
+    color: #000;
+}
+
+.client-single blockquote {
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    border-left: 4px solid #000;
+    padding-left: 20px;
+    margin: 40px 0;
+}
+
+.client-single ul.list-style {
+    padding: 30px;
+    line-height: 24px;
+}
+
+.client-single ul.list-style li {
+    font-size: 14px;
+    list-style: circle;
+}
+
+.lightbox-image img{
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.client-single .post-lightbox{
+    padding: 30px 0 0;
+ }
+
+ .client{
+    color:#ffffff;
+}
 
 
 
