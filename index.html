@@ -292,7 +292,7 @@
                     <div class="page-title sub">
                         <h5>leave us a message</h5>
                     </div>
-                    <form class="contact-form top_60" name="contact" method="POST">
+                    <form class="contact-form top_60" name="contact" method="POST" data-netlify="true">
                         <div class="row">
                             <!--Name-->
                             <div class="col-md-6">
@@ -305,6 +305,7 @@
                             <div class="col-md-12">
                                 <!--Message-->
                                 <textarea name="con_message" id="con_message" class="requie" placeholder="How can we help you?" rows="8"></textarea>
+                                <div data-netlify-recaptcha="true"></div>
                                 <button id="con_submit" class="sitebtn top_30 pull-right" type="submit">Submit</button>
                             </div>
                         </div>
