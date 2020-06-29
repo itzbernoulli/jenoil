@@ -138,16 +138,52 @@ $(document).ready( function() {
     
     
     //NAVBAR SHOW - HIDE
-    $(window).scroll(function() {				
-    var scroll = $(window).scrollTop();
-    var homeheight = $(".home").height() -86;			
+    // $(window).scroll(function() {				
+    // var scroll = $(window).scrollTop();
+    // var homeheight = $(".home").height() -86;			
 
-    if (scroll > homeheight ) {												
-        $("nav").slideDown(100);
-        } else {
-        $("nav").slideUp(100);
+    // if (scroll > homeheight ) {												
+    //     $("nav").slideDown(100);
+    //     } else {
+    //     $("nav").slideUp(100);
+    //     }
+    //  }); 
+
+    (function() {
+
+        var docElem = document.documentElement,
+            didScroll = false,
+            changeHeaderOn = 70;
+            document.querySelector( 'header, a.go-top' );
+        function init() {
+            window.addEventListener( 'scroll', function() {
+                if( !didScroll ) {
+                    didScroll = true;
+                    setTimeout( scrollPage, 100 );
+                }
+            }, false );
         }
-     }); 
+        
+        function scrollPage() {
+            var sy = scrollY();
+            if ( sy >= changeHeaderOn ) {
+                $( 'header' ).addClass('active');
+                $( 'a.go-top' ).addClass('active');
+            }
+            else {
+                $( 'header' ).removeClass('active');
+                $( 'a.go-top' ).removeClass('active');
+            }
+            didScroll = false;
+        }
+        
+        function scrollY() {
+            return window.pageYOffset || docElem.scrollTop;
+        }
+        
+        init();
+        
+    })();
     
     	
  // RESPONSIVE MENU
