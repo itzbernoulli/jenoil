@@ -45,6 +45,7 @@
         <header class="clearfix">
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
                 <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo1.png" alt="" width="250" height="100"></a>
                     <div class="top-line">
                         <div class="row">
                             <div class="col-sm-8">
@@ -179,17 +180,88 @@
         <!-- End contacting section -->
          
          
-    <footer>
-        <div class="container">
-            <div class="social">
-                <a href="#">facebook </a>
-                <a href="#">twitter </a>
-                <a href="#">instagram </a>
-                <a href="#">linkedin </a>
+<!-- footer 
+            ================================================== -->
+        <footer>
+            <div class="container">
+
+                <div class="up-footer">
+                    <div class="row">
+
+                        <div class="col-md-3">
+                            <div class="footer-widget useful-widget">
+                                <h3>Our Services</h3>
+                                <ul class="useful-list">
+                                    <li><a href="civil-engineering-construction-services.html">Civil Engineering construction Services</a></li>
+                                <li role="separator" class="divider"></li>
+                                
+                                <li role="separator" class="divider"></li>
+                                <li><a href="engineering-designs-and-fabrication.html">Engineering Designs and Fabrication</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="property-development-and-facility-management.html">Property Development and Facility management</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="pipeline-construction-general-services.html">Pipeline Construction General Services</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="location-and-site-preparation.html">Location and Site preparation</a></li>
+                                <li role="separator" class="divider"></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="footer-widget useful-widget">
+                                <h3>Useful Links</h3>
+                                <ul class="useful-list">
+                                    <li><a href="marine-consultancy.html">Marine Consultancy</a></li>
+                                    <li><a href="projects.html">Projects we have done</a></li>
+                                    <li><a href="about_us.html">About our company</a></li>
+                                    <li><a href="contact_us.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="footer-widget social-widget">
+                                <h3>Social Media Channels</h3>
+                                <p>Connect with us on social media </p>
+                                <ul class="social-icons">
+                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="footer-widget working-widget">
+                                 <h3>Address</h3>
+                                <p>6/8 Ogunnusi Road, Omole, Ikeja Layout, Lagos State</p>
+                                <br/>
+                                <h3>Office Hours</h3>
+                                <ul class="work-list">
+                                    <li>
+                                        Mon - Fri : <span>09:00 - 17:00,</span>
+                                    </li>
+                                    <li>
+                                        Saturday : <span>Closed</span>
+                                    </li>
+                                    <li>
+                                        Sunday : <span>Closed</span>
+                                    </li>
+                                </ul>
+
+                               
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <p class="copyright-line">© All Rights Reserved Jenoil</p>
+
             </div>
-            <p>Copyright © 2020 Jenoil, All rights Reserved.</p>
-        </div>
-    </footer>   
+        </footer>
+        <!-- End footer -->
     
     
 <!-- Javascripts -->
@@ -199,7 +271,27 @@
 <script src="js/isotope.pkgd.min.js"></script>
 <script src="js/typed.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/main.js"></script>  
+<script src="js/main.js"></script> 
+ <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 6.636454, lng: 3.3525215};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 14, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqjIES2jDT9KC3Fs0OJJHmNutp4YVpsYY&callback=initMap">
+    </script> 
     
  
 </body>
