@@ -1,6 +1,14 @@
     <!doctype html>
 <html lang="en">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-10E17F6EJ0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-10E17F6EJ0');
+</script>
 <title>Jenoil Integrated Services Limited</title>
 <meta charset="UTF-8">
 <meta name="description" content="Jenoil Integrated Services Limited">
@@ -144,19 +152,20 @@
                 <div class="contact-box">
                     <div class="row">
                         <div class="col-md-6">
-                            <form id="contact-form">
+                            <form id="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
                                 <h2>We’re Ready to Help!</h2>
                                 <p>You can't find a better partner than us. Reach out if you have enquiries or questions.</p>
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <input name="first-name" id="first-name" type="text" placeholder="Name*">
+                                        <input name="first-name" id="first-name" type="text" placeholder="First Name">
                                     </div>
                                     <div class="col-sm-6">
-                                        <input name="last-name" id="last-name" type="text" placeholder="Email*">
+                                        <input name="last-name" id="last-name" type="text" placeholder="Last Name">
                                     </div>
                                 </div>
-                                <input name="mail" id="mail" type="text" placeholder="Email*">      
-                                <textarea name="comment" id="comment" placeholder="Message*"></textarea>
+                                <input name="mail" id="mail" type="text" placeholder="Email">      
+                                <textarea name="comment" id="comment" placeholder="Message"></textarea>
+                                <div data-netlify-recaptcha="true"></div>
                                 <p>
                                     <span class="call">call us: 0809 518 6065</span> or 
                                     <input type="submit" id="submit_contact" value="Book Consultation">
@@ -292,7 +301,10 @@ function initMap() {
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqjIES2jDT9KC3Fs0OJJHmNutp4YVpsYY&callback=initMap">
     </script> 
-    
+
+    <script>
+
+    </script>
  
 </body>
 </html>
